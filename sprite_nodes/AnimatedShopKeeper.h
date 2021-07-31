@@ -3,37 +3,19 @@
 
 #include <gd.h>
 
-namespace gd {
+class CCAnimatedSprite;
 
-	class CCAnimatedSprite;
+typedef enum {
+	kShopTypeNormal,
+	kShopTypeSecret,
+	kShopTypeCommunity
+} ShopType;
 
-	typedef enum {
-		kShopTypeNormal,
-		kShopTypeSecret,
-		kShopTypeCommunity
-	} ShopType;
-
-	class AnimatedShopKeeper : public CCAnimatedSprite {
-	protected:
-		float m_fUnknown1;
-		float m_fUnknown2;
-		bool m_bUnknown;
-
-	public:
-		static AnimatedShopKeeper* create(ShopType type) {
-			return reinterpret_cast<AnimatedShopKeeper* (__fastcall*)(ShopType)>(
-				base + 0x14C4D0
-				)(type);
-		}
-		void startAnimating() {
-			return reinterpret_cast<void(__thiscall*)(AnimatedShopKeeper*)>(
-				base + 0x14C690
-				)(this);
-		}
-
-		//own vtable
-		virtual void animationFinished(const char*) {}
-	};
-}
+class AnimatedShopKeeper : public CCAnimatedSprite {
+public:
+	float m_fUnknown1;
+	float m_fUnknown2;
+	bool m_bUnknown;
+};
 
 #endif

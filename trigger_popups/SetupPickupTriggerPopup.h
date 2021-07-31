@@ -3,14 +3,12 @@
 
 #include <gd.h>
 
-namespace gd {
-    class SetupPickupTriggerPopup : public FLAlertLayer, public TextInputDelegate {
-        public:
-            PAD(0xc)
-            CCTextInputNode* m_pCountInput; // 0x1dc
-            // too lazy to RE more, it should be
-            // really easy to find the rest tho
-    };
-}
+class SetupPickupTriggerPopup : public FLAlertLayer, public TextInputDelegate {
+public:
+    PAD(0xc)
+    CCTextInputNode* m_pCountInput; // 0x1dc
+    // too lazy to RE more, it should be
+    // really easy to find the rest tho
+};
 
 #endif

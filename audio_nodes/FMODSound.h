@@ -3,11 +3,10 @@
 
 #include <gd.h>
 
-namespace gd {
-	class FMODSound : public cocos2d::CCNode {
-	public:
-		FMOD::Sound* m_pSound;
-	};
-}
+class FMODSound : public cocos2d::CCNode {
+public:
+	FMOD::Sound* m_pSound;
+};
+
 
 #endif

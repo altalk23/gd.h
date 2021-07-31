@@ -3,12 +3,11 @@
 
 #include <gd.h>
 
-namespace gd {
 
-    class GJSpecialColorSelect : public gd::FLAlertLayer {
-        // todo
-    };
+class GJSpecialColorSelect : public gd::FLAlertLayer {
+    // todo
+};
 
-}
+
 
 #endif

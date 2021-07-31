@@ -3,20 +3,11 @@
 
 #include <gd.h>
 
-namespace gd {
-    class CreateGuidelinesLayer : public FLAlertLayer, FLAlertLayerProtocol {
-        public:
-            PAD(36)
-            std::string m_sGuidelineString;
+class CreateGuidelinesLayer : public FLAlertLayer, FLAlertLayerProtocol {
+public:
+    PAD(36)
+    std::string m_sGuidelineString;
+};
 
-            void onStop(CCObject* pSender) {
-                reinterpret_cast<void(__thiscall*)(
-                    CreateGuidelinesLayer*, CCObject*
-                )>(
-                    base + 0x4d2c0
-                )(this, pSender);
-            }
-    };
-}
 
 #endif

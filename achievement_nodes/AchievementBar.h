@@ -3,22 +3,11 @@
 
 #include <gd.h>
 
-namespace gd {
-	class AchievementBar : public cocos2d::CCNodeRGBA {
-	protected:
-		PAD(0x24);
+class AchievementBar : public cocos2d::CCNodeRGBA {
+public:
+	PAD(0x24);
 
-	public:
-		static AchievementBar* create(const char* title,
-			const char* desc, const char* icon, bool quest) {
-			auto pRet = reinterpret_cast<AchievementBar* (__fastcall*)(const char*,
-				const char*, const char*, bool)>(
-					base + 0x3B120
-					)(title, desc, icon, quest);
-			__asm add esp, 0x8
-			return pRet;
-		}
-	};
-}
+};
+
 
 #endif

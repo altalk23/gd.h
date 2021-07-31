@@ -6,13 +6,7 @@
 
 #include "gdMacros.h"
 
-namespace gd {
-	inline auto base = reinterpret_cast<uintptr_t>(getBase());
-
-	inline bool init() {
-		return base;
-	}
-}
+inline auto base = reinterpret_cast<uintptr_t>(getBase());
 
 namespace FMOD {
 	class System;

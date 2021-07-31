@@ -3,13 +3,10 @@
 
 #include <gd.h>
 
-namespace gd {
+class GJRobotSprite;
 
-	class GJRobotSprite;
+class GJSpiderSprite : public GJRobotSprite {
 
-	class GJSpiderSprite : public GJRobotSprite {
-
-	};
-}
+};
 
 #endif 

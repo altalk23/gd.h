@@ -3,12 +3,11 @@
 
 #include <gd.h>
 
-namespace gd {
-    class TextInputDelegate;
+class TextInputDelegate;
 
-    class SetIDPopup : public FLAlertLayer, public TextInputDelegate {
-        // todo
-    };
-}
+class SetIDPopup : public FLAlertLayer, public TextInputDelegate {
+    // todo
+};
+
 
 #endif

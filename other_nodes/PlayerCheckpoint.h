@@ -3,7 +3,6 @@
 
 #include <gd.h>
 
-namespace gd {
     class PlayerCheckpoint : public cocos2d::CCNode {
     public:
         cocos2d::CCPoint m_position;
@@ -16,12 +15,11 @@ namespace gd {
         bool m_isRobot; // 0x0FD 
         bool m_isSpider; // 0x0FE 
         bool m_isOnGround; // 0x0FF 
-        bool m_hasGhostTrail; // 0x100 this actually takes up 4 bytes for some reason, maybe rob has it as an int
-        PAD(3);
-        bool m_small; // 0x104 
+        int m_hasGhostTrail; // 0x100 this actually takes up 4 bytes for some reason, maybe rob has it as an int
+        bool m_small; // 0x104              yes it is an int
         float m_speed; // 0x108 
         bool m_hidden; // 0x10C 
     };
-}
+
 
 #endif

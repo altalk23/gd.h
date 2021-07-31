@@ -3,10 +3,8 @@
 
 #include <gd.h>
 
-namespace gd {
-    class ColorActionSprite : public cocos2d::CCNode {
-
-    };
-}
+class ColorActionSprite : public cocos2d::CCNode {
+public:
+};
 
 #endif

@@ -3,10 +3,9 @@
 
 #include <gd.h>
 
-namespace gd {
-    class ListButtonBar : public cocos2d::CCNode {
-        // TODO
-    };
-}
+class ListButtonBar : public cocos2d::CCNode {
+    // TODO
+};
+
 
 #endif

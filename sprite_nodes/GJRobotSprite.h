@@ -3,13 +3,10 @@
 
 #include <gd.h>
 
-namespace gd {
+class CCAnimatedSprite;
 
-	class CCAnimatedSprite;
+class GJRobotSprite : public CCAnimatedSprite {
 
-	class GJRobotSprite : public CCAnimatedSprite {
-
-	};
-}
+};
 
 #endif

@@ -3,10 +3,9 @@
 
 #include <gd.h>
 
-namespace gd {
-    class DialogLayer : public cocos2d::CCLayerColor {
-        // TODO
-    };
-}
+class DialogLayer : public cocos2d::CCLayerColor {
+    // TODO
+};
+
 
 #endif

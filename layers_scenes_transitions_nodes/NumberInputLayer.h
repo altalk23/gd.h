@@ -3,12 +3,11 @@
 
 #include <gd.h>
 
-namespace gd {
 
-    class NumberInputLayer : public FLAlertLayer {
+class NumberInputLayer : public FLAlertLayer {
 
-    };
+};
 
-}
+
 
 #endif

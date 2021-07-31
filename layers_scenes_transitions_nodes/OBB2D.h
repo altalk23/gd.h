@@ -3,12 +3,11 @@
 
 #include <gd.h>
 
-namespace gd {
-    
-    class OBB2D : public cocos2d::CCNode {
-        // todo
-    };
 
-}
+class OBB2D : public cocos2d::CCNode {
+    // todo
+};
+
+
 
 #endif
