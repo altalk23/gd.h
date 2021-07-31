@@ -4,7 +4,6 @@
 #include <gd.h>
 
 namespace gd {
-	#pragma runtime_checks("s", off)
 	class TextArea : public cocos2d::CCSprite {
 	protected:
 		PAD(0x58);
@@ -31,7 +30,6 @@ namespace gd {
 			)>(base + 0x33830)(this, color);
 		}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

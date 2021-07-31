@@ -9,7 +9,6 @@ namespace gd {
 		kMenuAnimationTypeMove 	= 1,
 	};
 
-	#pragma runtime_checks("s", off)
 	class CCMenuItemSpriteExtra : public cocos2d::CCMenuItemSprite {
 	protected:
 		float m_fScaleMultiplier;	// 0x118
@@ -91,7 +90,6 @@ namespace gd {
 			this->m_fBaseScale = scale;
 		}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

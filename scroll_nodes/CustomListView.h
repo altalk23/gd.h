@@ -7,7 +7,6 @@ namespace gd {
 
 	class BoomListView;
 
-	#pragma runtime_checks("s", off)
 	class CustomListView : public BoomListView {
 		//no members
 	protected:
@@ -55,7 +54,6 @@ namespace gd {
 				)(this, cell, index);
 		}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

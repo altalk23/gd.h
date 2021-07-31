@@ -4,7 +4,6 @@
 #include <gd.h>
 
 namespace gd {
-	#pragma runtime_checks("s", off)
 	class AchievementBar : public cocos2d::CCNodeRGBA {
 	protected:
 		PAD(0x24);
@@ -20,7 +19,6 @@ namespace gd {
 			return pRet;
 		}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

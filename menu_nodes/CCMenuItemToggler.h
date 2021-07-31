@@ -7,7 +7,6 @@ namespace gd {
 
 	class CCMenuItemSpriteExtra;
 
-	#pragma runtime_checks("s", off)
 	class CCMenuItemToggler : public cocos2d::CCMenuItem {
 	protected:
 		CCMenuItemSpriteExtra* m_pOnButton;
@@ -71,7 +70,6 @@ namespace gd {
 			)(this, on);
 		}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

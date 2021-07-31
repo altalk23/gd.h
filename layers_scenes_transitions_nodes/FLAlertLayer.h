@@ -9,7 +9,6 @@ namespace gd {
 	class ButtonSprite;
 	class ScrollingLayer;
 
-	#pragma runtime_checks("s", off)
 	class FLAlertLayer : public cocos2d::CCLayerColor {
 	public:
 		cocos2d::CCMenu* m_pButtonMenu;
@@ -130,7 +129,6 @@ namespace gd {
 		cocos2d::CCLayer* getLayer() { return m_pLayer; }
 		cocos2d::CCLayer* getButtonMenu() { return m_pButtonMenu; }
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 

@@ -4,7 +4,6 @@
 #include <gd.h>
 
 namespace gd {
-	#pragma runtime_checks("s", off)
 	class ButtonSprite : public cocos2d::CCSprite {
 		public:
 			PAD(48)
@@ -70,7 +69,6 @@ namespace gd {
 				__asm add esp, 0x8
 			}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

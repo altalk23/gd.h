@@ -7,13 +7,9 @@
 #include "gdMacros.h"
 
 namespace gd {
-	inline auto base = reinterpret_cast<uintptr_t>(GetModuleHandle(0));
+	inline auto base = reinterpret_cast<uintptr_t>(getBase());
 
 	inline bool init() {
-		static_assert(sizeof(std::string) == 24,
-			"\n[GD.H] std::string is not 24 bytes\n" \
-			"[GD.H] Any classes containing member strings or using strings in functions will break!\n" \
-			"[GD.H] this is caused by building in Debug mode, to fix switch to Release\n");
 		return base;
 	}
 }

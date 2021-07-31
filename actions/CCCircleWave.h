@@ -4,7 +4,6 @@
 #include <gd.h>
 
 namespace gd {
-	#pragma runtime_checks("s", off)
 	class CCCircleWave : public cocos2d::CCNode {
 	protected:
 		cocos2d::CCArray* m_pArray; //idk what this is tho
@@ -31,7 +30,6 @@ namespace gd {
 			reinterpret_cast<void(__thiscall*)(CCCircleWave*, CCNode*, bool)>(base + 0x16f20)(this, obj, unk);
 		}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

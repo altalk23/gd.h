@@ -4,7 +4,6 @@
 #include "gd.h"
 
 namespace gd {
-	#pragma runtime_checks("s", off)
 	class GJListLayer : public cocos2d::CCLayerColor {
 	protected:
 		CCObject* m_pTarget;
@@ -19,7 +18,6 @@ namespace gd {
 			return pRet;
 		}
 	};
-	#pragma runtime_checks("s", restore)
 }
 
 #endif

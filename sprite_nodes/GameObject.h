@@ -57,7 +57,6 @@ namespace gd {
 	class ColorActionSprite;
 	class GJEffectManager;
 
-	#pragma runtime_checks("s", off)
 	class GameObject : public CCSpritePlus {
 	public:
 		PAD(44);
@@ -313,7 +312,6 @@ namespace gd {
 		}
 	};
 
-	#pragma runtime_checks("s", restore)
 }
 
 #endif
