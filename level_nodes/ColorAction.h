@@ -3,11 +3,15 @@
 
 #include <gd.h>
 
-class ColorActionSprite;
+class ColorActionSprite : public cocos2d::CCNode {
+    float m_opacity;
+    cocos2d::_ccColor3B m_f0124;
+    cocos2d::_ccColor3B m_activeColor;
+};
 
 class ColorAction : public cocos2d::CCNode {
 public:
-    PAD(12);
+    PAD2(12, 12);
     cocos2d::ccColor3B m_color;
     PAD(5);
     float m_unk100;
